@@ -3,12 +3,9 @@ package BEU2W3D5.controller;
 
 import BEU2W3D5.Exceptions.BadRequest;
 import BEU2W3D5.Payload.EventoPayload;
-import BEU2W3D5.Payload.SetEventoPayload;
-import BEU2W3D5.Payload.SetTipoEventoPayload;
 import BEU2W3D5.entities.Evento;
 import BEU2W3D5.service.EventoService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
