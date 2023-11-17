@@ -32,7 +32,7 @@ public class JWTTools {
                     .build().parse(token);
         } catch (Exception ex){
 
-            throw new Unauthorized("Il token non è valido! Per favore effettua nuovamente il login!"); //ERRORE
+            throw new Unauthorized("Il token non è valido! Per favore effettua nuovamente il login!");
         }
 
     }

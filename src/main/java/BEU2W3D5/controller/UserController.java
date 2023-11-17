@@ -50,18 +50,7 @@ public class UserController {
         }
         return userService.modifyUser(userPayload,id);
     }
-    /*@DeleteMapping("/{id}")
-    @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void deleteUser(@PathVariable int id)
-    {
-        userService.deleteUser(id,eventoService);
-    }
 
-
-    @PutMapping("/{id}/image")
-    public User modifyImage(@PathVariable int id,@RequestParam("immagineProfilo") MultipartFile file) throws IOException {
-        return userService.modifyImage(file,id);
-    }*/
 
 
     @GetMapping("/{id}/eventi")

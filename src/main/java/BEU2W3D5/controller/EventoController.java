@@ -37,21 +37,5 @@ public class EventoController {
             throw new BadRequest(validation.getAllErrors());
         return EventoService.createEvento(evento);
     }
-   /* @PutMapping("/{id}")
-    public Evento setUserEvento(@RequestBody @Validated SetEventoPayload evento, BindingResult validation, @PathVariable int id){
-        if(validation.hasErrors())  throw new BadRequest(validation.getAllErrors());
-        return eventoService.setUserEvento(evento,id);
-    }
-    @DeleteMapping("/{id}")
-    @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void deleteDispositivo(@PathVariable int id){
-        eventoService.deleteEvento(id);
-    }
 
-    @PutMapping("/{id}/stato")
-    public Evento setStato(@PathVariable int id,@RequestBody SetTipoEventoPayload body){
-        return EventoService.setStato(body,id);
-
-    }
-*/
 }
