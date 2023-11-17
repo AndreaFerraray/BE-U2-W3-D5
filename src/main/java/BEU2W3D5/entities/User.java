@@ -33,6 +33,8 @@ public class User {
     private String imageUrl;
     @Column(name="password", nullable = false)
     private String password;
+    @Enumerated(EnumType.STRING)
+    private TipoUtente tipo;
 
 
     @JsonIgnore

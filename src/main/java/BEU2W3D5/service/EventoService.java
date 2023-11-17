@@ -13,6 +13,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -45,6 +46,7 @@ public class EventoService {
         evento.setPostiDisponibili(eventoPayload.getPosti());
         return eventoRepository.save(evento);
     }
+
 
 
     public void deleteEvento(int id){
